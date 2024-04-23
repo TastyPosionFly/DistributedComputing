@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 
 public class ChargeSever {
     private static Map<String, String> serverMethods = new HashMap<String, String>();
-    private static final String REGISTER_HOST = InetAddress.getLoopbackAddress().getHostAddress();
+    private static final String REGISTER_HOST = "192.168.172.161";
     private static final int REGISTER_PORT = 8888;
     private static final int PORT = 1234;
     private static final int MAX_USER = 20;
