@@ -12,6 +12,7 @@ target/
 *.iml
 *.ipr
 *.idea
+src/main/java/RPC/Register/config.xml
 
 ### Eclipse ###
 .apt_generated

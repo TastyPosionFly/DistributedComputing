@@ -3,8 +3,10 @@ package RPC.Register;
 import RPC.serverInfo;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.UnknownHostException;
 import java.util.List;
 import java.util.Map;
 import java.util.Timer;
@@ -50,6 +52,11 @@ public class Register {
 
     public static void main(String[] args) {
 
+        try {
+            System.out.println("Register's ip address is " + InetAddress.getLocalHost().getHostAddress());
+        } catch (UnknownHostException e) {
+            throw new RuntimeException(e);
+        }
 
         new Register(SAVE_FILE);
 
