@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/AOP/AopConfig.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/AOP/IOConfig.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/AOP/TollGate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/DI_IOC/Kitchen.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/DI_IOC/TestRestaurant.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/DI_IOC/food.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Reflection/MethodReflection.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Reflection/shape.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Reflection/shapes.dtd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Socket/Client/Client.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/Socket/Client/ClientGUI.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

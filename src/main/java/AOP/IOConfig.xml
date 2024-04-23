@@ -1,0 +1,8 @@
+<config>
+    <vehicle type="Car">AOP.SmallCar</vehicle>
+    <vehicle type="小汽车">AOP.SmallCar</vehicle>
+    <vehicle type="Bus">AOP.Bus</vehicle>
+    <vehicle type="大巴车">AOP.Bus</vehicle>
+    <vehicle type="Truck">AOP.Truck</vehicle>
+    <vehicle type="卡车">AOP.Truck</vehicle>
+</config>

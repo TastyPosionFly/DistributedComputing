@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<services>
+    <service name="RPC.Charge">
+        <server>
+            <ip>192.168.3.46</ip>
+            <port>1234</port>
+        </server>
+        <server>
+            <ip>10.42.94.10</ip>
+            <port>1234</port>
+        </server>
+    </service>
+</services>

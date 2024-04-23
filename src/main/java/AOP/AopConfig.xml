@@ -1,0 +1,4 @@
+<config>
+    <beforeMethod>beforeCharge</beforeMethod>
+    <afterMethod>afterCharge</afterMethod>
+</config>

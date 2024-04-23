@@ -1,0 +1,4 @@
+<!ELEMENT shapes (shape*)>
+        <!ELEMENT shape (cn,en)>
+        <!ELEMENT cn (#PCDATA)>
+        <!ELEMENT en (#PCDATA)>
