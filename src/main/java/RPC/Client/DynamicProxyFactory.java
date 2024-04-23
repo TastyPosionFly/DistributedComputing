@@ -13,7 +13,7 @@ import java.lang.reflect.Proxy;
 import java.net.Socket;
 
 public class DynamicProxyFactory {
-    private static final String REGISTER_HOST = "127.0.0.1";
+    private static final String REGISTER_HOST = "192.168.172.161";
     private static final int REGISTER_PORT = 9999;
 
     public static Object getProxy(final Class classType) {

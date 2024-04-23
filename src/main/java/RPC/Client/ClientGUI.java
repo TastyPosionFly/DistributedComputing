@@ -1,5 +1,8 @@
 package RPC.Client;
 
+import RPC.Charge;
+import RPC.message;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,8 +20,6 @@ public class ClientGUI extends JFrame {
     private JComboBox<String> operationComboBox;
     private JTextArea responseArea;
 
-    private static final String SERVER_ADDRESS = "192.168.137.106";
-    private static final int SERVER_PORT = 6666;
 
     public ClientGUI() {
         createUI();
@@ -63,21 +64,15 @@ public class ClientGUI extends JFrame {
         String amount = amountField.getText().trim();
         String operationCode = operation.equals("消费") ? "0" : "1";
 
-        try (Socket socket = new Socket(SERVER_ADDRESS, SERVER_PORT);
-             PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-             BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()))) {
-            String formattedAmount = String.format("%05d", Integer.parseInt(amount));
-            String request = operationCode + cardNumber + formattedAmount + "55746";
+        String formattedAmount = String.format("%05d", Integer.parseInt(amount));
+        String request = operationCode + cardNumber + formattedAmount + "55746";
 
-            out.println(request);
+        Charge charge = (Charge) DynamicProxyFactory.getProxy(Charge.class);
+        message result = charge.charge(request);
+        System.out.println(result.getResult());
 
-            String response = in.readLine();
-            responseArea.setText("Server response: " + response);
+        responseArea.setText("Server response: " + result.getResult());
 
-        } catch (IOException e) {
-            responseArea.setText("Error: " + e.getMessage());
-            e.printStackTrace();
-        }
     }
 
     public static void main(String[] args) {
