@@ -1,3 +1,4 @@
 <methods>
     <method name="RPC.Charge">RPC.Server.ChargeImpl</method>
+    <method name="RPC.test">RPC.Server.Charge1</method>
 </methods>

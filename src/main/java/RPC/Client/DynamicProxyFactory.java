@@ -3,8 +3,6 @@ package RPC.Client;
 import RPC.message;
 import RPC.serverInfo;
 
-import javax.sound.sampled.Port;
-import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.lang.reflect.InvocationHandler;
@@ -31,6 +29,8 @@ public class DynamicProxyFactory {
             System.out.println("Service is not in any server");
             System.exit(1);
         }
+
+        System.out.println("Connecting to " + host + ":" + port);
 
         InvocationHandler handler = new InvocationHandler() {
             public Object invoke(Object proxy, Method method, Object args[]) throws Exception {

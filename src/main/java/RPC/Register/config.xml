@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <services>
+    <service name="RPC.test">
+        <server>
+            <ip>192.168.172.161</ip>
+            <port>1234</port>
+        </server>
+    </service>
+    <service name="example">
+        <server>
+            <ip>127.0.0.1</ip>
+            <port>8080</port>
+        </server>
+    </service>
     <service name="RPC.Charge">
         <server>
-            <ip>192.168.3.46</ip>
+            <ip>192.168.172.79</ip>
             <port>1234</port>
         </server>
         <server>
-            <ip>10.42.94.10</ip>
+            <ip>192.168.172.161</ip>
             <port>1234</port>
         </server>
     </service>
